@@ -1,32 +1,25 @@
 import React from "react";
 import { Formik, Form, Field } from "formik";
+import Save from "../components/data/save";
 
 
 const AddingForm = (props) => {
-
-    let list = [{
-        id: null,
-        value: "",
-        isCompleted: false
-    }]
-
+    let el = {}; //początkowa deklaracja elementu, który się zmienia
     return(
         <div>
-        <Formik initialValues = {{
+           
+        <Formik initialValues={{
             id: "",
             value: "",
             isCompleted: false
         }}
 
         onSubmit={(item)=>{
-            list.push({
-                id: list.length,
-                value: item.value,
-                isCompleted: item.isCompleted
-            })
-
+            el = item; //Zmiana po kliknięciu na obiekt z danymi z formularza
+            console.log(el);
             
-            
+           
+           
         }}>
             <Form>
                 <div className="form">
@@ -43,9 +36,18 @@ const AddingForm = (props) => {
             </Form>
             
         </Formik>
+
+        <Save 
+            element={el} //el zmienia się dynamicznie
+            
+        /> 
         </div>
+
+        
         
     )
+
+    
 }
 
 export default AddingForm;

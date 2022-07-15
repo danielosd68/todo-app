@@ -1,20 +1,20 @@
 import React from 'react';
-
 import Timer from '../components/timer/timer';
 import AddingForm from './form';
 
 
 const View = (props) => {
-    return(
+    return (
         <div className='main'>
             <div className='timer'>
-                <Timer/>
+                <Timer />
             </div>
             <div className='content'>
-                <AddingForm/>
+                <AddingForm />
                 <div className='items'>
-                    
+                   
                 </div>
+                
             </div>
         </div>
     )

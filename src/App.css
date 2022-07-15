@@ -12,6 +12,7 @@ body{
   justify-content:center;
   align-items:center;
   flex-direction:column;
+
 }
 
 .content{
@@ -20,14 +21,19 @@ body{
   background-color:white;
   z-index:1;
   margin-top:10px;
+  margin-bottom:100px;
+ 
 }
 
 .timer{
   width:100vw;
-  text-align:center;
   font-size:200%;
   color:white;
   user-select:none;
+  height:200px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
 .form{
@@ -50,7 +56,7 @@ body{
 }
 
 .items{
-  border-top:2px solid black;
+
   width:80%;
   margin-left:auto;
   margin-right:auto;
@@ -74,7 +80,27 @@ body{
   background-color:rgb(2, 126, 2);
 }
 
-.item{
+.items{
+  
+  padding:3%;
+}
+
+.description{
   border-bottom:2px solid black;
   padding:3%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-size:120%;
+}
+
+.description button{
+  padding:1%;
+  background-color:black;
+  color:white;
+  font-size:90%;
+  border:none;
+  border-radius:40px;
+  width:200px;
+  cursor:pointer;
 }
