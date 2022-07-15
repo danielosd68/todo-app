@@ -11,9 +11,6 @@ const View = (props) => {
             </div>
             <div className='content'>
                 <AddingForm />
-                <div className='items'>
-                   
-                </div>
                 
             </div>
         </div>
