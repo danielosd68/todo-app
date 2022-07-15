@@ -66,6 +66,7 @@ class AddingForm extends Component{
                 
                
             }}>
+                
                 <Form>
                     <div className="form">
                         <label>

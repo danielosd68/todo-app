@@ -18,7 +18,7 @@ body {
 .content {
   width: 60vw;
   min-height: 700px;
-  background-color: white;
+
   z-index: 1;
   margin-top: 10px;
   margin-bottom: 100px;
@@ -50,6 +50,11 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 50px;
+}
+
+form{
+  background-color:white;
+  border-radius:100px;
 }
 
 
@@ -113,6 +118,7 @@ body {
 .blank-info {
   text-align: center;
   opacity: 0.6;
+  color:white;
 }
 
 .element-container {
@@ -121,6 +127,7 @@ body {
   margin-right: auto;
   margin-top: 30px;
   margin-bottom: 30px;
-  background-color: #f0f0f0;
+  background-color: white;
   box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  border-radius:10px;
 }
