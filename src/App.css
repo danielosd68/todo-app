@@ -131,3 +131,16 @@ form{
   box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
   border-radius:10px;
 }
+
+.element-content{
+  width:60%;
+}
+
+.element-date{
+  text-align:center;
+  width:20%;
+}
+
+.element-button button{
+  height:45px;
+}
